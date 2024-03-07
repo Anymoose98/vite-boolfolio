@@ -73,11 +73,7 @@ header{
     background: -webkit-linear-gradient(171deg, rgba(252,135,0,1) 36%, rgba(35,208,75,1) 98%);
     background: linear-gradient(171deg, rgba(252,135,0,1) 36%, rgba(35,208,75,1) 98%);
     color: white;
-    position: fixed; /* Imposta la posizione fissa */
-    top: 0; /* Fissa l'header all'inizio della finestra del browser */
-    left: 0;
     width: 100%; /* Imposta la larghezza del 100% */
-    z-index: 1000;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fc8700",endColorstr="#23d04b",GradientType=1);
     
     img{
