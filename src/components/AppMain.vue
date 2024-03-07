@@ -28,7 +28,7 @@ export default {
 </script>
 
 <template>
-    <main class="container">
+    <main class="container my-5">
         <div class="row">
             <div class="d-flex flex-wrap">
             
