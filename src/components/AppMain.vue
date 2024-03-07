@@ -21,7 +21,7 @@ export default {
     created() {
         axios.get(this.store.ApiPosts)
         .then(response => {
-            console.log(response.data.results);
+            this.posts = response.data.results;
         })
     }
 }
@@ -29,10 +29,14 @@ export default {
 
 <template>
     <main class="container">
-        <AppPost /> 
+        <div class="row">
+            <div class="d-flex flex-wrap">
+            
+                <AppPost v-for="post in posts" :key="posts" :post="post"/> 
+            </div>
+        </div>
     </main>
 </template>
 
 <style scoped>
-/* Aggiungi i tuoi stili locali qui */
 </style>
