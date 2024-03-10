@@ -1,8 +1,10 @@
 <script>
+import { store } from '../store.js';
 export default {
+
     data() {
         return {
-         
+            store
             
         }
     },
@@ -37,9 +39,16 @@ export default {
                 </div>
 
                 <!-- Logo e intro -->
-                <div class="col-4 d-flex justify-content-center">
+                <div class="col-4 text-center">
                     <h1>Boolfoglio</h1>
+                    <div class="d-flex justify-content-center">
+                        <li v-for="(item, index) in store.menu" :key="index" class="menu-list mx-1">
+                                <router-link :to="{ name: item.name }">{{ item.label }}</router-link>
+                        </li>
+                    </div>    
                 </div>
+
+             
 
                 <!-- Social -->
                 <div class="col-4 text-end ">
@@ -84,6 +93,23 @@ header{
         height: 100%;
         width: 100%;
     }
+
+    .menu-list {
+    list-style: none;
+    color: white;
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+
+            &:hover {
+                color: rgb(17, 0, 255);
+            }
+        }
+    }
 }
+
     </style>
 

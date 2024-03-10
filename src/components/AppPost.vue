@@ -16,7 +16,7 @@ import { store } from '../store.js'
 <template lang="">
     <div class="col-4">
         <div class="card m-2" >
-            <!-- <img :src="store.ApiPosts + post.img" class="card-img-top" :alt="post.title"> -->
+            <img :src="'http://127.0.0.1:8000/storage/'  + post.img" class="card-img-top" :alt="post.title">
             <div class="card-body">
                 <h5 class="card-title">{{post.title}}</h5>
                 <p class="card-text">{{post.description}}</p>

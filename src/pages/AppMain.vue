@@ -1,5 +1,5 @@
 <script>
-import AppPost from './AppPost.vue';
+import AppPost from '../components/AppPost.vue';
 import { store } from '../store.js';
 import axios from 'axios';
 
@@ -39,4 +39,4 @@ export default {
 </template>
 
 <style scoped>
-</style>
+</style>./AppMain.vue/index.js
